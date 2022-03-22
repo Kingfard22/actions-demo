@@ -14,3 +14,9 @@ jobs:
           node -v
           npm -v
           echo "First workflow done"
+
+      - name: python commands
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
