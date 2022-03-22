@@ -1,0 +1,16 @@
+name: PDX Deployment
+
+on: [push]
+
+jobs: 
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo some stuff
+        run: echo "This is PDX |||||---------|||||"
+
+      - name: run multiline commands
+        run: |
+          node -v
+          npm -v
+          echo "First workflow done"
