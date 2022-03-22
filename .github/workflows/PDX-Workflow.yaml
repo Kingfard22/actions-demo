@@ -13,7 +13,7 @@ jobs:
         run: |
           node -v
           npm -v
-          echo "First workflow done"
+          ech "First workflow done"
 
       - name: python commands
         run: |
